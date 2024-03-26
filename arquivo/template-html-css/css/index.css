@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e4e3ec;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho-iamgem{
+    width: 72px;
+}
+
+.cabecalho-menu{
+    list-style: none;
+    flex-direction: row;
+    gap: 32px;
+    
+}

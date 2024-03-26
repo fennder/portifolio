@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <!--Informações de configuração-->
+    <!--Criar uma página de nome livre (*).html-->
+    <head>
+        <title>Projeto Inicial</title>
+        <!--Localização de linguagem-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <!--  -->
+
+    <body>
+
+        <table width="80%">
+            <tr>
+                <!--Criar um link para a index.html ida e volta-->
+                <td><a href="../index.html">Página Inicial</a></td>
+            </tr>
+            <caption>Cadastro de Pessoa</caption>
+            <tr>
+                <td></td>
+                <td>
+                    <!--Inical do bloco de Formulario-->
+                    <h3>Formulário</h3>
+                    <form action="#">
+                        <label for="fname">Nome:</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="Digiete o seu nome:"/><br><br>
+                        <label for="fsname">SobreNome:</label><br>
+                        <input type="text" name="fsname" id="fsname" placeholder="Digite o Sobre Nome:"/><br><br>
+                        <label for="fcpf">CPF:</label><br>
+                        <input type="text" name="fcpf" id="fcpf" placeholder="Digite seu CPF:"/><br><br>
+                        <label for="fsname">Identidade:</label><br>
+                        <input type="text" name="fsname" id="fsname" placeholder="Digite a Identidade:"/><br><br>
+                        <label for="faddress">Endreço:</label><br>
+                        <input type="text" name="faddress" id="faddress" placeholder="Digite o Endereço:"/><br><br>
+                        <label for="fnubmer">Número:</label><br>
+                        <input type="number" name="fnumber" id="fnumber" placeholder="Digite o número:"/><br><br>
+                        <label for="fcity">Cidade:</label><br>
+                        <input type="text" name="fcity" id="fcity" placeholder="Digite a Cidade:"/><br><br>
+                        <label for="fuf">Estado:</label><br>
+                        <input type="text" name="fuf" id="fuf" placeholder="Digite o Estado:"/><br><br>
+
+                        <input type="radio" id="fsexo" name="fsexo" value="Masculino">Masculino<br>
+                        <input type="radio" id="fsexo" name="fsexo" value="Feminino">Feminino <br><br>
+
+                        <input type="checkbox" id="fselecao" name="fselecao" value="Açucar">Gato
+                        <input type="checkbox" id="fselecao" name="fselecao" value="Arroz">Cachorro
+                        <input type="checkbox" id="fselecao" name="fselecao" value="Feijão">Cavalo <br><br>
+
+                        <label for="fobservacoes">Observações</label><br>
+                        <textarea type="textarea" id="fobservacoes" name="fobservacoes" rows="4" placeholder="Digite o texto aqui..."></textarea>
+                        <label for="fweek">Semana:</label><br>
+                        <input type="week" id="fweek" name="fweek" placeholder=""><br>
+                        <label for="frange">Volume:</label><br>
+                        <input type="range" id="frange" name="frange" placeholder=""><br>
+
+                        <label for="fdate">Data de Nascimento:</label><br>
+                        <input type="datetime" id="fdata" name="fdata" placeholder="__/__/____"><br>
+                        <label for="fdatetime-local">Data de Cadastro:</label><br>
+                        <input type="datetime-local" id="fdatetime-local" name="fdatetime-local" placeholder="dd/mm/aaaa --:--:00"><br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <!--Final do bloco de Formulario-->
+                </td>
+                <td></td>
+            </tr>
+        </table>
+
+    </body>
+    <footer>
+
+    </footer>
+
+</html>
