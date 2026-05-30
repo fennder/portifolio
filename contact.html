@@ -1,135 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Abrindo Portas é uma maneira em que todas as empresas e/ou pessoas deveriam estar, abertas a novas informações, opiniões e tecnologias principalmente" />
-        <meta name="author" content="Edir Pereira" />
-        <title>AbrindoPortas - Tecnologia</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <img class="navbar-brand" src="http://abrindoportas.tec.br/assets/favicon.png" alt="" width="50px">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Abrindo Portas</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resumo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projetos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
-                        </ul>
-                    </div>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Contato | Edir Pereira - Abrindo Portas</title>
+    <meta name="description" content="Entre em contato com a Abrindo Portas. Soluções em tecnologia e consultoria em Palmas." />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { blue: '#0ea5e9', dark: '#0f172a', light: '#f8fafc' } }, fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-brand-light text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="http://abrindoportas.tec.br/assets/favicon.png" alt="Logo" class="h-10 w-10 object-contain group-hover:scale-105 transition-transform" />
+                    <span class="font-extrabold text-xl tracking-tight text-slate-900">Abrindo<span class="text-brand-blue">Portas</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Home</a>
+                    <a href="resume.html" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Resumo</a>
+                    <a href="projects.html" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Projetos</a>
+                    <a href="contact.html" class="px-5 py-2.5 bg-brand-dark text-white font-medium rounded-lg shadow-md">Contato</a>
                 </div>
-            </nav>
-            <!-- Page content-->
-            <section class="py-5">
-                <div class="container px-5">
-                    <!-- Contact form-->
-                    <div class="bg-light rounded-4 py-5 px-4 px-md-5">
-                        <div class="text-center mb-5">
-                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 class="fw-bolder">Envie sua mensagem</h1>
-                            <p class="lead fw-normal text-muted mb-0">Vamos trabalhar juntos!</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8 col-xl-6">
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                    <!-- Name input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Nome Completo</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                    </div>
-                                    <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                        <label for="email">E-mail</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                    </div>
-                                    <!-- Phone number input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                        <label for="phone">Telefone</label>
-                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                    </div>
-                                    <!-- Message input-->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                        <label for="message">Mensagem ...</label>
-                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                    </div>
-                                    <!-- Submit success message-->
-                                    <!---->
-                                    <!-- This is what your users will see when the form-->
-                                    <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
-                                        <div class="text-center mb-3">
-                                            <div class="fw-bolder">Form submission successful!</div>
-                                            To activate this form, sign up at
-                                            <br />
-                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                        </div>
-                                    </div>
-                                    <!-- Submit error message-->
-                                    <!---->
-                                    <!-- This is what your users will see when there is-->
-                                    <!-- an error submitting the form-->
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                    <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto"> <a href="index.html"> <img class="small" src="http://abrindoportas.tec.br/assets/favicon.png" alt="" width="50px"></a></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacidade</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Termos</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contato</a>
-                    </div>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-brand-blue p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="index.html" class="block px-3 py-2 text-slate-600 font-medium rounded-md hover:bg-slate-50">Home</a>
+            <a href="resume.html" class="block px-3 py-2 text-slate-600 font-medium rounded-md hover:bg-slate-50">Resumo</a>
+            <a href="projects.html" class="block px-3 py-2 text-slate-600 font-medium rounded-md hover:bg-slate-50">Projetos</a>
+            <a href="contact.html" class="block px-3 py-2 text-brand-blue font-semibold rounded-md bg-blue-50">Contato</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-16 flex items-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100">
+                <div class="text-center mb-10">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-brand-blue mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">Envie sua mensagem</h1>
+                    <p class="text-slate-500">Vamos construir ou blindar o seu negócio juntos.</p>
+                </div>
+
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">Nome Completo</label>
+                        <input type="text" id="name" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-colors text-slate-800" placeholder="Ex: João da Silva">
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">E-mail</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-colors text-slate-800" placeholder="voce@exemplo.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-slate-700 mb-2">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-colors text-slate-800" placeholder="(63) 99999-9999">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">Sua Mensagem</label>
+                        <textarea id="message" required rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/20 focus:border-brand-blue transition-colors text-slate-800 resize-none" placeholder="Como posso te ajudar hoje?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-brand-blue hover:bg-blue-600 text-white font-bold rounded-xl transition-all shadow-lg shadow-blue-500/30 text-center uppercase tracking-wide text-sm mt-4">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-slate-500 text-sm font-medium mt-auto">
+        <div class="max-w-7xl mx-auto px-4">&copy; <span id="year"></span> Abrindo Portas Tecnologia.</div>
+    </footer>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            window.scrollY > 10 ? nav.classList.add('shadow-sm', 'bg-white/90') : nav.classList.remove('shadow-sm', 'bg-white/90');
+        });
+
+        // Script simples preventivo para o formulário visual (Evitar recarregamento)
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Formulário otimizado e pronto para integração com backend!');
+        });
+    </script>
+</body>
 </html>
