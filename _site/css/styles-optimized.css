@@ -1,0 +1,57 @@
+/* Abrindo Portas - CSS Otimizado v2.0 */
+/* Minificado para melhor performance */
+
+:root{--primary-color:#3b82f6;--secondary-color:#1e40af;--accent-color:#06b6d4;--dark-color:#1e293b;--light-color:#f8fafc;--text-primary:#1e293b;--text-secondary:#64748b}
+.dark{--primary-color:#60a5fa;--secondary-color:#3b82f6;--accent-color:#22d3ee;--dark-color:#0f172a;--light-color:#1e293b;--text-primary:#f1f5f9;--text-secondary:#94a3b8}
+.reveal{opacity:0;transform:translateY(40px);transition:all 0.8s cubic-bezier(0.5,0,0,1)}
+.reveal.active{opacity:1;transform:translateY(0)}
+.cursor::after{content:'|';animation:blink 1s step-end infinite}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
+.profile-glow{transition:all 0.5s ease-in-out}
+.profile-glow:hover{box-shadow:0 0 40px rgba(59,130,246,0.6)}
+.skeleton{background:linear-gradient(90deg,#f0f0f0 25%,#e0e0e0 50%,#f0f0f0 75%);background-size:200% 100%;animation:loading 1.5s infinite}
+@keyframes loading{0%{background-position:200% 0}100%{background-position:-200% 0}}
+html{scroll-behavior:smooth}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#f1f5f9}
+::-webkit-scrollbar-thumb{background:#3b82f6;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#1e40af}@media(max-width:768px){.reveal{transform:translateY(30px)}}
+
+/* Tailwind Custom Utilities */
+.gradient-brand{background:linear-gradient(135deg,#3b82f6 0%,#06b6d4 100%)}
+.text-gradient-brand{background:linear-gradient(135deg,#3b82f6 0%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.glow-shadow{box-shadow:0 0 20px rgba(59,130,246,0.5)}
+.hover-lift{transition:all 0.3s ease}
+.hover-lift:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,0.1)}
+
+/* Animation Classes */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+@keyframes blob{0%{transform:translate(0px,0px) scale(1)}33%{transform:translate(30px,-50px) scale(1.1)}66%{transform:translate(-20px,20px) scale(0.9)}100%{transform:translate(0px,0px) scale(1)}}
+@keyframes pulse-slow{0%,100%{opacity:1}50%{opacity:.8}}
+@keyframes slideUp{0%{opacity:0;transform:translateY(30px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes glow{0%{box-shadow:0 0 20px rgba(59,130,246,0.5)}100%{box-shadow:0 0 30px rgba(59,130,246,0.8)}}
+.animate-float{animation:float 6s ease-in-out infinite}
+.animate-blob{animation:blob 7s infinite}
+.animate-pulse-slow{animation:pulse-slow 3s cubic-bezier(0.4,0,0.6,1) infinite}
+.animate-slide-up{animation:slideUp 0.6s ease-out}
+.animate-fade-in{animation:fadeIn 0.8s ease-out}
+.animate-glow{animation:glow 2s ease-in-out infinite alternate}
+
+/* Mobile First Responsive */
+@media(max-width:640px){.text-5xl{font-size:2rem}.text-6xl{font-size:2.5rem}.text-7xl{font-size:3rem}.p-8{padding:1.5rem}.gap-4{gap:1rem}}
+
+/* Performance Optimizations */
+@media(prefers-reduced-motion:reduce){*{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+@media(prefers-reduced-motion:reduce),print{.animate-float,.animate-blob,.animate-pulse-slow,.animate-slide-up,.animate-fade-in,.animate-glow{animation:none !important}}
+
+/* Print Styles */
+@media print{.no-print{display:none}*:before,*:after{background:none !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+/* High Contrast Mode */
+@media(prefers-contrast:high){.profile-glow:hover{box-shadow:0 0 10px currentColor}a{text-decoration:underline}}
+@media(prefers-contrast:high){.border{border-width:2px !important}}
+
+/* Focus Visible for Accessibility */
+.focus-visible:focus{outline:3px solid #3b82f6;outline-offset:2px}

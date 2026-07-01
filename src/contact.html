@@ -1,0 +1,332 @@
+---
+permalink: /contact.html
+---
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    {% include "head.html" %}
+</head>
+<body class="bg-brand-light text-slate-900 antialiased flex flex-col min-h-screen">
+    
+    {% include "navbar-home.html" %}
+
+    <main class="flex-grow pt-20 pb-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            
+            <div class="text-center mb-12 pt-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+                    Entre em <span class="text-gradient-brand">Contato</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Vamos construir ou blindar o seu negócio juntos. Preencha o formulário e entro em contato em até 24 horas.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12 items-start">
+                
+                <div class="lg:col-span-1">
+                    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-8 shadow-lg border border-slate-200/50 sticky top-24">
+                        <h3 class="text-xl font-semibold text-slate-900 mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900 mb-1">Email</h4>
+                                    <p class="text-slate-600">{{ site.email }}</p>
+                                    <p class="text-sm text-slate-500 mt-1">Resposta em até 24h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900 mb-1">Telefone/WhatsApp</h4>
+                                    <p class="text-slate-600">{{ site.phone }}</p>
+                                    <p class="text-sm text-slate-500 mt-1">Segunda a Sexta, 9h-18h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-900 mb-1">Localização</h4>
+                                    <p class="text-slate-600">Palmas, Tocantins</p>
+                                    <p class="text-sm text-slate-500 mt-1">Atendimento remoto e presencial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-slate-200/50">
+                            <h4 class="font-semibold text-slate-900 mb-4">Redes Sociais</h4>
+                            <div class="flex gap-3">
+                                <a href="https://twitter.com/EdirFennder" target="_blank" class="w-10 h-10 bg-slate-100 hover:bg-blue-50 rounded-lg flex items-center justify-center transition-colors" aria-label="Twitter">
+                                    <svg class="w-5 h-5 text-slate-600 hover:text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/fennder/" target="_blank" class="w-10 h-10 bg-slate-100 hover:bg-blue-50 rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                                    <svg class="w-5 h-5 text-slate-600 hover:text-blue-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/fennder" target="_blank" class="w-10 h-10 bg-slate-100 hover:bg-slate-50 rounded-lg flex items-center justify-center transition-colors" aria-label="GitHub">
+                                    <svg class="w-5 h-5 text-slate-600 hover:text-slate-900" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2">
+                    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-8 md:p-12 shadow-lg border border-slate-200/50">
+                        <form id="contactForm" class="space-y-6">
+                            <div id="formStatus" class="hidden p-4 rounded-lg"></div>
+                            
+                            <div class="form-group">
+                                <label for="name" class="block text-sm font-semibold text-slate-700 mb-2">
+                                    Nome Completo <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900 placeholder-slate-400" placeholder="Ex: João da Silva" minlength="2">
+                                <span class="text-red-500 text-sm mt-1 hidden" id="nameError">Por favor, informe seu nome completo</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="form-group">
+                                    <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">
+                                        E-mail <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900 placeholder-slate-400" placeholder="voce@exemplo.com">
+                                    <span class="text-red-500 text-sm mt-1 hidden" id="emailError">Por favor, informe um e-mail válido</span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone" class="block text-sm font-semibold text-slate-700 mb-2">
+                                        Telefone / WhatsApp <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900 placeholder-slate-400" placeholder="(63) 99999-9999" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
+                                    <span class="text-red-500 text-sm mt-1 hidden" id="phoneError">Formato: (63) 99999-9999</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="block text-sm font-semibold text-slate-700 mb-2">
+                                    Tipo de Serviço <span class="text-red-500">*</span>
+                                </label>
+                                <select id="service" name="service" required class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="consultoria">Consultoria Estratégica</option>
+                                    <option value="desenvolvimento">Desenvolvimento Web</option>
+                                    <option value="treinamento">Treinamento e Mentoria</option>
+                                    <option value="suporte">Suporte Técnico</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                                <span class="text-red-500 text-sm mt-1 hidden" id="serviceError">Por favor, selecione um serviço</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget" class="block text-sm font-semibold text-slate-700 mb-2">
+                                    Orçamento Aproximado
+                                </label>
+                                <select id="budget" name="budget" class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900">
+                                    <option value="">Selecione uma faixa</option>
+                                    <option value="ate1000">Até R$ 1.000</option>
+                                    <option value="1000-5000">R$ 1.000 - R$ 5.000</option>
+                                    <option value="5000-10000">R$ 5.000 - R$ 10.000</option>
+                                    <option value="10000-25000">R$ 10.000 - R$ 25.000</option>
+                                    <option value="acima25000">Acima de R$ 25.000</option>
+                                    <option value="a-discutir">A discutir</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="block text-sm font-semibold text-slate-700 mb-2">
+                                    Sua Mensagem <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="message" name="message" required rows="5" maxlength="1000" class="w-full px-4 py-3 bg-slate-50/50 border border-slate-200/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary transition-colors text-slate-900 placeholder-slate-400 resize-none" placeholder="Conte-me sobre seu projeto, desafios ou objetivos. Quanto mais detalhes, melhor posso ajudar..."></textarea>
+                                <div class="flex justify-between mt-1">
+                                    <span class="text-red-500 text-sm hidden" id="messageError">Por favor, escreva sua mensagem</span>
+                                    <span class="text-slate-500 text-sm">
+                                        <span id="charCount">0</span>/1000 caracteres
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="flex items-start gap-3">
+                                    <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 w-4 h-4 text-brand-primary bg-slate-50 border-slate-300 rounded focus:ring-brand-primary focus:ring-2">
+                                    <span class="text-sm text-slate-700">
+                                        Gostaria de receber dicas de tecnologia e atualizações sobre novos serviços
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <div class="pt-4">
+                                <button type="submit" id="submitBtn" class="w-full py-4 bg-gradient-to-r from-brand-primary to-brand-secondary hover:from-brand-secondary hover:to-brand-primary text-white font-bold rounded-xl transition-all shadow-lg shadow-brand-primary/30 text-center uppercase tracking-wide text-sm hover:shadow-xl hover:shadow-brand-primary/50 disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <span id="submitText">Enviar Mensagem</span>
+                                    <span id="loadingText" class="hidden">Enviando...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include "footer-full.html" %}
+    {% include "whatsapp-button.html" %}
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Página de Contato - Abrindo Portas",
+        "url": "https://abrindoportas.tec.br/contact.html",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Abrindo Portas Tecnologia",
+            "description": "Serviços de tecnologia e consultoria em Palmas/TO",
+            "image": "https://abrindoportas.tec.br/assets/favicon.webp",
+            "telephone": "+55{{ site.whatsapp }}",
+            "email": "{{ site.email }}",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Palmas",
+                "addressRegion": "Tocantins",
+                "addressCountry": "BR"
+            },
+            "openingHours": "Mo-Fri 09:00-18:00"
+        }
+    }
+    </script>
+
+    {% include "scripts.html" %}
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const loadingText = document.getElementById('loadingText');
+        const messageTextarea = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+
+        messageTextarea.addEventListener('input', () => {
+            const length = messageTextarea.value.length;
+            charCount.textContent = length;
+            if (length > 900) {
+                charCount.classList.add('text-red-500');
+            } else {
+                charCount.classList.remove('text-red-500');
+            }
+        });
+
+        function validateField(field, errorElement, validationFn) {
+            const isValid = validationFn(field.value);
+            if (!isValid) {
+                errorElement.classList.remove('hidden');
+                field.classList.add('border-red-500', 'focus:ring-red-500/20');
+            } else {
+                errorElement.classList.add('hidden');
+                field.classList.remove('border-red-500', 'focus:ring-red-500/20');
+            }
+            return isValid;
+        }
+
+        const validators = {
+            name: (value) => value.trim().length >= 2,
+            email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
+            phone: (value) => /\(\d{2}\)\s?\d{4,5}-\d{4}/.test(value),
+            service: (value) => value !== '',
+            message: (value) => value.trim().length >= 10
+        };
+
+        Object.keys(validators).forEach(fieldName => {
+            const field = document.getElementById(fieldName);
+            const errorElement = document.getElementById(fieldName + 'Error');
+            if (field && errorElement) {
+                field.addEventListener('blur', () => validateField(field, errorElement, validators[fieldName]));
+                field.addEventListener('input', () => {
+                    if (field.classList.contains('border-red-500')) {
+                        validateField(field, errorElement, validators[fieldName]);
+                    }
+                });
+            }
+        });
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isFormValid = true;
+            Object.keys(validators).forEach(fieldName => {
+                const field = document.getElementById(fieldName);
+                const errorElement = document.getElementById(fieldName + 'Error');
+                if (field && errorElement) {
+                    if (!validateField(field, errorElement, validators[fieldName])) {
+                        isFormValid = false;
+                    }
+                }
+            });
+            if (!isFormValid) {
+                showFormStatus('Por favor, corrija os erros no formulário.', 'error');
+                return;
+            }
+            submitBtn.disabled = true;
+            submitText.classList.add('hidden');
+            loadingText.classList.remove('hidden');
+            try {
+                await new Promise(resolve => setTimeout(resolve, 2000));
+                showFormStatus('✅ Mensagem enviada com sucesso! Entrarei em contato em até 24 horas.', 'success');
+                contactForm.reset();
+                charCount.textContent = '0';
+                formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } catch (error) {
+                showFormStatus('❌ Erro ao enviar mensagem. Tente novamente ou envie um email para {{ site.email }}', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitText.classList.remove('hidden');
+                loadingText.classList.add('hidden');
+            }
+        });
+
+        function showFormStatus(message, type) {
+            formStatus.textContent = message;
+            formStatus.className = `p-4 rounded-lg ${type === 'success' ? 'bg-green-100 text-green-800 border border-green-200' : 'bg-red-100 text-red-800 border border-red-200'}`;
+            formStatus.classList.remove('hidden');
+            setTimeout(() => { formStatus.classList.add('hidden'); }, 5000);
+        }
+
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 2) {
+                    value = `(${value}`;
+                } else if (value.length <= 6) {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+                } else if (value.length <= 10) {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6)}`;
+                } else {
+                    value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+                }
+                e.target.value = value;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<!-- SEO Meta Tags -->
+<title> | Edir Pereira | Abrindo Portas - Tecnologia e Negócios</title>
+<meta name="description" content="Profissional Fullstack e Consultor em Palmas/TO. Especialista em projetos governamentais e soluções tecnológicas para PMEs.">
+<meta name="author" content="Edir Pereira">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content=" | Edir Pereira | Abrindo Portas - Tecnologia e Negócios">
+<meta property="og:description" content="Profissional Fullstack e Consultor em Palmas/TO. Especialista em projetos governamentais e soluções tecnológicas para PMEs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abrindoportas.tec.br/resume.html">
+<meta property="og:image" content="https://abrindoportas.tec.br/assets/og-image.jpg">
+<meta property="og:site_name" content="Abrindo Portas">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content=" | Edir Pereira | Abrindo Portas - Tecnologia e Negócios">
+<meta name="twitter:description" content="Profissional Fullstack e Consultor em Palmas/TO. Especialista em projetos governamentais e soluções tecnológicas para PMEs.">
+<meta name="twitter:image" content="https://abrindoportas.tec.br/assets/og-image.jpg">
+<meta name="twitter:creator" content="@EdirFennder">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/assets/favicon.webp" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicon.webp" sizes="16x16" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+<meta name="theme-color" content="#0ea5e9">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                colors: {
+                    brand: { 
+                        primary: '#3b82f6', 
+                        secondary: '#1e40af', 
+                        accent: '#06b6d4',
+                        blue: '#0ea5e9',
+                        dark: '#1e293b', 
+                        light: '#f8fafc',
+                        muted: '#64748b'
+                    },
+                    'light-bg': '#f8fafc',
+                    'dark-bg': '#0f172a',
+                    'dark-card': '#1e293b'
+                },
+                fontFamily: { 
+                    sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    mono: ['JetBrains Mono', 'monospace']
+                },
+                animation: {
+                    'float': 'float 6s ease-in-out infinite',
+                    'blob': 'blob 7s infinite',
+                    'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    'slide-up': 'slideUp 0.6s ease-out',
+                    'fade-in': 'fadeIn 0.8s ease-out',
+                    'glow': 'glow 2s ease-in-out infinite alternate',
+                },
+                keyframes: {
+                    float: {
+                        '0%, 100%': { transform: 'translateY(0)' },
+                        '50%': { transform: 'translateY(-20px)' },
+                    },
+                    blob: {
+                        '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                        '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                        '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                        '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                    },
+                    slideUp: {
+                        '0%': { opacity: '0', transform: 'translateY(30px)' },
+                        '100%': { opacity: '1', transform: 'translateY(0)' },
+                    },
+                    fadeIn: {
+                        '0%': { opacity: '0' },
+                        '100%': { opacity: '1' },
+                    },
+                    glow: {
+                        '0%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)' },
+                        '100%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.8)' },
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/styles-optimized.css">
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JNYZ8GJ5MW"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JNYZ8GJ5MW');
+</script>
+
+<!-- Dark mode init -->
+<script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+    function toggleDarkMode() {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.theme = 'light';
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.theme = 'dark';
+        }
+    }
+</script>
+
+</head>
+<body class="bg-light-bg text-slate-800 dark:bg-dark-bg dark:text-slate-200 antialiased flex flex-col min-h-screen transition-colors duration-300">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/80 dark:bg-dark-card/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 transition-all duration-300 shadow-sm" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="/index.html" class="flex items-center gap-3 group">
+                <img src="/assets/favicon.webp" alt="Logo" class="h-10 w-10 object-contain group-hover:scale-105 transition-transform" loading="lazy" />
+                <span class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-slate-100">
+                    Abrindo<span class="text-brand-blue">Portas</span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/index.html" class="text-slate-600 dark:text-slate-400 hover:text-brand-blue font-medium transition-colors">Home</a>
+                <a href="/resume.html" class="text-slate-600 dark:text-slate-400 hover:text-brand-blue font-medium transition-colors">Resumo</a>
+                <a href="/projects.html" class="text-slate-600 dark:text-slate-400 hover:text-brand-blue font-medium transition-colors">Projetos</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <button id="dark-mode-toggle" class="p-2 text-slate-600 dark:text-slate-400 hover:text-brand-blue rounded-lg transition-colors" aria-label="Alternar modo escuro">
+                    <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                    </svg>
+                    <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                    </svg>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-600 dark:text-slate-400 hover:text-brand-blue p-2 rounded-lg transition-colors" aria-label="Abrir Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-dark-card border-t border-slate-200 dark:border-slate-700 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+        <a href="/index.html" class="block px-3 py-2 text-slate-600 dark:text-slate-400 font-medium rounded-md hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Home</a>
+        <a href="/resume.html" class="block px-3 py-2 text-slate-600 dark:text-slate-400 font-medium rounded-md hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Resumo</a>
+        <a href="/projects.html" class="block px-3 py-2 text-slate-600 dark:text-slate-400 font-medium rounded-md hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">Projetos</a>
+    </div>
+</nav>
+
+
+    <main class="flex-grow pt-32 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight mb-4">
+                    Meu <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500 dark:from-brand-blue dark:to-cyan-400">Resumo</span>
+                </h1>
+            </div>
+
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-brand-blue mb-8 border-b border-slate-200 dark:border-slate-700 pb-2">Experiência Profissional</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Técnico em Sistemas Administrativos</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">Tribunal de Justiça do Estado do Tocantins • Palmas, TO</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-blue-50 text-brand-blue text-sm font-bold rounded-full border border-blue-100">2023 - Presente</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Suporte a sistemas administrativos e gestão de contratos de serviços de tecnologia.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Gerente de Sistemas Corporativos</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">Agência de Tecnologia da Informação (ATI) • Palmas, TO</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2020 - 2023</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Gerenciamento das atividades de gestão do Portal E-gov, sistemas corporativos e desenvolvimento de integrações. Liderança em inteligência analítica e implantação de softwares seguindo processos definidos.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Líder de Divisão de Transformação Digital</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">Agência de Tecnologia da Informação (ATI) • Palmas, TO</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2019 - 2020</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Responsável pelo suporte do sistema do PPA e Liderança no projeto de Transformação Digital.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Administrador Web & Assitente de Suporte</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">Plansul • Brasília, DF</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2007 - 2015</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Responsável por montar e revisar arquivos Web, liberar a versão Web do Jornal do Senado Federal e desenvolver o aplicativo SenadoBR. Anteriormente (2007-2012) responsável pelo cadastro e suporte a usuários do jornal.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Chefe Setor de TI</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">Exército Brasileiro • Brasília, DF</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2002 - 2007</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Implementação pioneira de rede baseada em <em class="text-brand-blue">Thin Client</em> para reduzir custos operacionais, consumo de energia e necessidade de licenciamento, permitindo a conectividade remota eficiente.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-8 border-b border-slate-200 dark:border-slate-700 pb-2">Educação</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Pós-Graduação Lato-Sensu</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">UNICESUMAR • Palmas, TO</p>
+                                <p class="text-sm font-bold text-brand-blue mt-1">EAD e Novas Tecnologias Educacionais</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2016 - 2017</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Formação focada em projetar, especificar e implantar sistemas EAD, com proficiência em tecnologias educacionais voltadas para a formação profissional.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Tecnólogo</h3>
+                                <p class="text-slate-500 dark:text-slate-400 font-medium">UNICESUMAR • Brasília, DF</p>
+                                <p class="text-sm font-bold text-brand-blue mt-1">Análise e Desenvolvimento de Sistemas</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-bold rounded-full">2013 - 2015</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Desenvolvimento da capacidade de diagnosticar, aplicar e dar suporte a sistemas de informação, abrangendo o ciclo completo de desenvolvimento de software.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-white dark:bg-dark-card p-8 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6 flex items-center gap-3">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        Linguagens & Tecnologias
+                    </h2>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">HTML5</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">CSS3</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">Bootstrap</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">Materialize</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">Java</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">Ruby</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">PHP</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">Spring</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">PostgreSQL</span>
+                        <span class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition-colors cursor-default">MySQL</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Abrindo Portas</h3>
+                <p class="text-slate-300 text-sm mb-4">Tecnologia e Negócios em Palmas/TO</p>
+                <div class="space-y-2 text-sm text-slate-400">
+                    <p>📧 contato@abrindoportas.tec.br</p>
+                    <p>📱 (63) 98118-6519</p>
+                    <p>📍 Palmas, Tocantins, Brasil</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                <div class="space-y-2">
+                    <a href="/index.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Home</a>
+                    <a href="/resume.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Resumo</a>
+                    <a href="/projects.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Projetos</a>
+                    <a href="/contact.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Contato</a>
+                    <a href="/privacidade.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Privacidade</a>
+                    <a href="/termos.html" class="block text-slate-300 hover:text-white transition-colors text-sm">Termos</a>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                <p class="text-slate-300 text-sm mb-4">Receba dicas de tecnologia e atualizações</p>
+                <form class="space-y-3">
+                    <input type="email" placeholder="Seu email" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-white/50 transition-colors">
+                    <button type="submit" class="w-full px-4 py-2 bg-brand-primary hover:bg-brand-secondary text-white font-medium rounded-lg transition-colors">
+                        Inscrever-se
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
+            <p>&copy; <span id="year"></span> Abrindo Portas Tecnologia. Todos os direitos reservados.</p>
+            <p class="mt-2">Desenvolvido com ❤️ e ☕</p>
+        </div>
+    </div>
+</footer>
+
+    <a href="https://wa.me/5563981186519" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 hover:shadow-[0_0_25px_rgba(37,211,102,0.6)] transition-all duration-300 group animate-pulse-slow" aria-label="WhatsApp">
+    <div class="relative">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">1</span>
+    </div>
+</a>
+
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const darkModeToggleMobile = document.getElementById('dark-mode-toggle-mobile');
+    const html = document.documentElement;
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+    }
+    if (darkModeToggleMobile) {
+        darkModeToggleMobile.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+    }
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('svg');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+            } else {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            }
+        });
+    }
+
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
